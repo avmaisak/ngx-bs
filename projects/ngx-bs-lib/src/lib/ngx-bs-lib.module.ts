@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgxBsLibComponent } from './ngx-bs-lib.component';
-
-
 
 @NgModule({
-  declarations: [NgxBsLibComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [NgxBsLibComponent]
+  exports: [],
 })
 export class NgxBsLibModule { }
