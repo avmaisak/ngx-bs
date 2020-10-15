@@ -12,4 +12,4 @@ import { BsContainerDirective } from './directives';
     BsContainerDirective,
   ],
 })
-export class LayoutModule { }
+export class BsLayoutModule { }

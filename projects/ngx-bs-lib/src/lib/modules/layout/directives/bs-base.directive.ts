@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Input } from '@angular/core';
 
-import { BsBreakoints } from '../../../bs.globals';
+import { BsBreakoints } from '../../../common/bs.breakpoints';
 
 @Directive({})
 export class BsBaseDirective {

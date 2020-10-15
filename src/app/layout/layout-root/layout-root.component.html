@@ -1,27 +1,12 @@
-<ul class="nav p-3 bg-primary ">
-  <li class="nav-item ">
-    <a class="nav-link text-white active"
-       aria-current="page"
-       href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link"
-       href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link"
-       href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled"
-       href="#"
-       tabindex="-1"
-       aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+<app-layou-nav-top></app-layou-nav-top>
 
-<section class="p-5 border"
-         bp="sm"
-         bs-container>
-  <router-outlet></router-outlet>
-</section>
+<main>
+  <div class="row vh-100">
+    <div class="menu-side">
+      <app-layout-nav-side></app-layout-nav-side>
+    </div>
+    <div class="main-side">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>

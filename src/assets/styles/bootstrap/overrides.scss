@@ -1,0 +1,19 @@
+// Required
+@import "~node_modules/bootstrap/scss/functions";
+@import "~node_modules/bootstrap/scss/variables";
+@import "~node_modules/bootstrap/scss/mixins";
+
+$blue:$MATERIAL_deep_purple_600;
+$primary: $blue;
+
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark);
+
+$link-color:$primary;
+$link-hover-color:$MATERIAL_deep_purple_900;

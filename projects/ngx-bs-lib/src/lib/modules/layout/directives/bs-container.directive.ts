@@ -2,7 +2,7 @@ import {
   Directive, Input, OnInit,
 } from '@angular/core';
 
-import { BsGlobals } from '../../../bs.globals';
+import { BsStyles } from '../../../common/bs.styles';
 import { BsBaseDirective } from './bs-base.directive';
 
 @Directive({
@@ -14,14 +14,16 @@ export class BsContainerDirective extends BsBaseDirective implements OnInit {
 
   public ngOnInit(): void {
     const elClassList = this._elementRef.nativeElement.classList;
-    let containerStyle = BsGlobals.Container;
 
-    if (elClassList.contains(BsGlobals.Container)) elClassList.remove(BsGlobals.Container);
-    if (elClassList.contains(BsGlobals.ContainerFluid)) elClassList.remove(BsGlobals.ContainerFluid);
-    if (this.fluid) containerStyle = BsGlobals.ContainerFluid;
+    const containerStyle = BsStyles.Container;
 
+    if (elClassList.contains(BsStyles.Container)) elClassList.remove(BsStyles.Container);
+    if (elClassList.contains(BsStyles.ContainerFluid)) elClassList.remove(BsStyles.ContainerFluid);
+    if (this.fluid) {
+      elClassList.add(BsStyles.ContainerFluid);
+      return;
+    }
     let resultClass = '';
-
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     this.bp && this._breakPointCorrect ? resultClass = `${containerStyle}-${this.bp}` : resultClass = containerStyle;
 

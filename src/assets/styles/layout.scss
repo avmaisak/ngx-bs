@@ -1,0 +1,70 @@
+.nav-custom {
+  @extend .p-3,
+  .position-fixed,
+  .bg-primary;
+  left: 0;
+  right: 0;
+
+  li {
+    a {
+      @extend .text-white;
+    }
+  }
+}
+
+.vh-100 {
+  min-height: 100vh;
+  height: auto;
+}
+
+main {
+  @extend .container-fluid;
+  padding-top: 50px;
+  height: 100vh;
+}
+
+.menu-side {
+  @extend .col,
+  .border-right,
+  .vh-100,
+  .pl-3;
+
+  max-width: 200px;
+}
+
+.main-side {
+  @extend .col,
+  .vh-100,
+  .pl-5;
+
+  padding-top: 40px !important;
+}
+
+.nav-side {
+  @extend .pr-2;
+  padding-top: 30px;
+
+  strong {
+    @extend .pl-3;
+  }
+
+  a,
+  strong {
+    @extend .d-block,
+    .p-2,
+    .pl-3,
+  }
+
+  a {
+    @extend .rounded;
+    text-decoration: none;
+
+    strong {
+      color: $MATERIAL_deep_purple_600;
+    }
+
+    &.active {
+      background-color: $MATERIAL_deep_purple_50;
+    }
+  }
+}
