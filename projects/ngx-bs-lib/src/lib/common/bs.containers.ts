@@ -1,4 +1,4 @@
 export enum BsStyles {
   Container = 'container',
-  ContainerFluid = 'container-fluid'
+  ContainerFluid = 'container-fluid',
 }

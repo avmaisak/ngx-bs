@@ -2,7 +2,7 @@ import {
   Directive, Input, OnInit,
 } from '@angular/core';
 
-import { BsStyles } from '../../../common/bs.styles';
+import { BsStyles } from '../../../common/bs.containers';
 import { BsBaseDirective } from './bs-base.directive';
 
 @Directive({
